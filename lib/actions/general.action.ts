@@ -90,8 +90,6 @@ export async function getFeedbackByInterviewId(
   return { id: feedbackDoc.id, ...feedbackDoc.data() } as Feedback;
 }
 
-//timepass comment for synapse
-
 export async function getLatestInterviews(
   params: GetLatestInterviewsParams,
 ): Promise<Interview[] | null> {
